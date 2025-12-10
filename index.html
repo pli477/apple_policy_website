@@ -1,9 +1,251 @@
-Privacy Policy for Jellycat Everything
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-We respect your privacy. 
-- Our app only uses Apple's standard networking (HTTPS/TLS) to communicate with our servers. 
-- We do not collect personal information such as name, address, or contact details. 
-- Any photos or content you upload are only used to provide the app's features and are not stored or shared. 
-- We do not sell or share your data with third parties.
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
 
-Contact: payne.lipeilin@gmail.com
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 50px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #764ba2;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            body {
+                padding: 20px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last Updated: 2024</p>
+
+        <div class="section">
+            <h2><span class="badge">1</span> Information We Collect</h2>
+            <p>When you use our App, we may process the following information:</p>
+            <ul>
+                <li><strong>Content you provide:</strong> Images or videos you upload for style transformation.</li>
+                <li><strong>Device and log data:</strong> Device model, operating system version, crash logs, and error codes to help us troubleshoot and improve stability.</li>
+            </ul>
+            <p>We do <strong class="highlight">not collect</strong> personally identifiable information (such as your real name, ID, phone number, or address).</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">2</span> How We Use Your Information</h2>
+            <ul>
+                <li><strong>One-time processing:</strong> Your uploaded content is converted to base64 format and securely transmitted to third-party AI models (e.g., Google Gemini) <strong class="highlight">strictly for</strong> generating the requested output.</li>
+                <li><strong>No storage:</strong> We do <strong class="highlight">not store</strong> your uploaded images, videos, or generated results on our servers.</li>
+                <li><strong>User control:</strong> You are responsible for downloading and saving the generated result. If you do not download it, it may not be retrievable later.</li>
+                <li><strong>Technical logs:</strong> We only keep minimal call records (such as task ID, timestamp, status codes) for service monitoring. These logs contain no original content.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">3</span> Sharing With Third Parties</h2>
+            <p>To provide the service, your content may be encrypted and transmitted to third-party providers:</p>
+            <ul>
+                <li><strong>Google Gemini</strong> – image/video understanding and generation</li>
+                <li><strong>OpenAI</strong> – image/video understanding and generation</li>
+            </ul>
+            <p>We ensure third-party services only process your data as needed for functionality.</p>
+            <p>We do <strong class="highlight">not sell, rent, or otherwise share</strong> your information with advertisers or unrelated third parties, except:</p>
+            <ul>
+                <li>As required by law, regulation, or valid legal process.</li>
+                <li>With your explicit consent.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">4</span> Data Storage and Deletion</h2>
+            <ul>
+                <li><strong>Immediate deletion:</strong> Uploaded content is not stored on our servers and is removed automatically once the task is completed.</li>
+                <li><strong>No server backup:</strong> If you do not download the result, it cannot be recovered.</li>
+                <li><strong>User request:</strong> You may contact us via Apple to request deletion of technical call logs, which we will handle within a reasonable time.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">5</span> Children's Privacy</h2>
+            <p>Our App is not directed to children under 13. We do not knowingly collect personal data from children. If you are a parent or guardian and believe your child has provided us with content, please contact us so we can delete it.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">6</span> Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the right to:</p>
+            <ul>
+                <li>Access or request deletion of data related to you.</li>
+                <li>Withdraw permissions (e.g., camera or photo library access) at any time.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">7</span> Data Security</h2>
+            <p>We apply industry-standard measures to protect information during transfer, including encryption and access controls.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">8</span> Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Material changes will be notified within the App or via other reasonable means before taking effect.</p>
+        </div>
+
+        <div class="section">
+            <h2><span class="badge">9</span> Contact Us</h2>
+            <p>If you have questions, concerns, or complaints about this Privacy Policy, please contact us at:</p>
+            <div class="contact-info">
+                <a href="mailto:gavin@in-no-work.org">gavin@in-no-work.org</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
